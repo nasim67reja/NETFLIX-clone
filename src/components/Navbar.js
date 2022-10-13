@@ -26,11 +26,13 @@ const Navbar = () => {
       {user?.email ? (
         <div>
           <Link to="/account">
-            <button className="text-white pr-4">Account</button>
+            <button className="text-white pr-4 text-xs sm:text-base">
+              Account
+            </button>
           </Link>
           <button
             onClick={handleLogout}
-            className="bg-red-600 px-6 py-2 rounded cursor-pointer text-white"
+            className="bg-red-600 px-6 py-2 rounded cursor-pointer text-white text-xs sm:text-base"
           >
             Logout
           </button>
@@ -38,10 +40,12 @@ const Navbar = () => {
       ) : (
         <div>
           <Link to="/login">
-            <button className="text-white pr-4">Sign In</button>
+            <button className="text-white pr-4 text-xs sm:text-base">
+              Sign In
+            </button>
           </Link>
           <Link to="/signup">
-            <button className="bg-red-600 px-6 py-2 rounded cursor-pointer text-white">
+            <button className="bg-red-600 sm:px-6 px-5 py-1 sm:py-2 rounded cursor-pointer text-white text-xs sm:text-base">
               Sign Up
             </button>
           </Link>
